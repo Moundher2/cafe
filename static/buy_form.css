@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/buy.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form-group {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.form-group p{
+    margin: 30px;
+    border-radius: 10px;
+}
+
+
+
+.buy-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.buy-button:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+
+
+/* ---- footer ----- */
+
+.footer{
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/footer.jpeg);    */
+    background-color: rgb(55, 54, 54);
+}
+
+.footer h4{
+    color: #fff;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footer p{
+    color:#dbd2d2;
+}
+
+.icons .fab{
+    color: #fff;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    transition: 0.3s;
+}
+
+.icons .fab:hover{
+    color: #f44336;
+}
+
+
+
+
+
+/* Your existing CSS styles here */
+
+/* Update the background color and sizing of the form */
+.form-group {
+    width: 70%; /* Adjust the width to make the form smaller */
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px; /* Adjust the padding to make the form smaller */
+    border-radius: 10px;
+  }
+  
+  /* Update the styling of form elements and labels */
+  .form-group label {
+    display: block;
+    margin-bottom: 5px; /* Reduce the spacing between labels and input fields */
+    text-align: left; /* Align the labels to the left */
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"] {
+    width: 100%;
+    padding: 8px; /* Reduce the padding to make the form elements smaller */
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    margin-bottom: 10px; /* Reduce the spacing between input fields */
+    font-size: 12px; /* Reduce the font size for form elements */
+  }
+  
+  /* Style the form submit button */
+  .buy-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 25px; /* Reduce the padding to make the button smaller */
+    font-size: 12px; /* Reduce the font size for the button */
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buy-button:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.3s;
+  }
+  

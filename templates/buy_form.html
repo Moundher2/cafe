@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'buy_form.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <!-- ----- buying form ----- -->
+  <section class="page">
+    <div class="form-group">
+      <form method="POST" action="" autocomplete="off">
+        {% csrf_token %}
+        <div class="form-field">
+          <label for="{{ form.name.id_for_label }}">Name:</label>
+          {{ form.name }}
+        </div>
+        <div class="form-field">
+          <label for="{{ form.mail.id_for_label }}">Email:</label>
+          {{ form.mail }}
+        </div>
+        <div class="form-field">
+          <label for="{{ form.phone_number.id_for_label }}">Phone Number:</label>
+          {{ form.phone_number }}
+        </div>
+        <div class="form-field">
+          <label for="{{ form.home_address.id_for_label }}">Home Address:</label>
+          {{ form.home_address }}
+        </div>
+        <input class="buy-button" type="submit" value="BUY">
+      </form>
+    </div>
+  </section>
+
+
+  <!-- ----- Footer ----- -->
+
+  <section class="footer" id="contact">
+    <h4 style="margin-top: 50px;">Contact Us</h4>
+    <p>Feel Free To Check Our Media</p>
+    <div class="icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+  </section>
+
+
+</body>
+
+</html>

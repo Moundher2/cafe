@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% load static %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <section class="header" id="home">
+    <nav>
+      <a href="#home"><img style="border-radius: 50%; width: 75px;" src="{% static 'images/logo33.jpg' %}"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="material-icons" onclick="hideMenu()">close</i>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#how">HOW</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="material-icons" onclick="showMenu()">menu</i>
+    </nav>
+    <div class="text-box">
+      <h1>Minipresso GR</h1>
+      <p>
+        The Minipresso GR is a compact and ingenious espresso maker designed to cater to the coffee cravings of those on
+        the move. <br> Its innovative semi-automatic piston allows for the effortless preparation of authentic espresso
+        shots, making it an ideal companion for travel,<br> camping, or busy lifestyles. With its lightweight and
+        durable <br> design, the Minipresso GR promises a delightful <br> and flavorful espresso experience anytime,
+        anywhere.
+      </p>
+      <h2>Buy the Product Now</h2>
+      <a href="{% url 'buy' %}" class="buy-button">BUY</a>
+    </div>
+  </section>
+
+
+
+  <!-- ----- about ----- -->
+  <section class="about" id="about">
+    <h1>About The Product</h1>
+    <p>Minipresso GR - Portable Espresso on the Go!</p>
+    <div class="row">
+      <div class="about-col">
+        <h3>Enjoy Espresso on the Move with Minipresso GR</h3>
+        <p>The Minipresso GR is a compact espresso maker, perfect for coffee lovers on the move.</p>
+      </div>
+      <div class="about-col">
+        <h3>Innovative Design and Functionalit</h3>
+        <p>Its semi-automatic piston design ensures authentic espresso brewing with ease.</p>
+      </div>
+      <div class="about-col">
+        <h3>Exceptional Espresso Anywhere</h3>
+        <p> With its lightweight and durable construction, enjoy exceptional espresso anywhere you go</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ------ how ------- -->
+
+  <section class="how" id="how">
+    <h1>How To Use</h1>
+    <p>simple and functional</p>
+    <div class="row">
+      <div class="how-col">
+        <img src="{% static 'images/step00.jpng' %}">
+        <h3 style="margin-top: 33px;">Prepare the Minipresso GR:</h3>
+        <p>Start by unscrewing the water tank and filling it with hot water (not boiling) up to the indicated level.
+          Next, take off the espresso cup from the bottom of the device and fill the filter basket with your favorite
+          finely ground coffee. Make sure to tamp the coffee gently and evenly.</p>
+      </div>
+      <div class="how-col">
+        <img src="{% static 'images/step2.jpg' %}">
+        <h3 style="margin-top: 33px;">Pump and Extract:</h3>
+        <p>Reattach the espresso cup to the Minipresso GR. Hold the device with one hand and use the other hand to pump
+          the piston repeatedly. The pumping action builds pressure, forcing the hot water through the coffee grounds,
+          resulting in a rich and flavorful espresso shot. Continue pumping until you see the desired amount of espresso
+          in the cup.</p>
+      </div>
+      <div class="how-col">
+        <img src="{% static 'images/step1.jpg' %}">
+        <h3>Enjoy Your Espresso:</h3>
+        <p>Once you've extracted the espresso, remove the espresso cup, and savor your freshly brewed coffee. The
+          Minipresso GR's semi-automatic design ensures consistent and authentic espresso, allowing you to enjoy a
+          delightful cup of coffee, whether you're at home, in the office, or on an adventurous journey.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ----- Footer ----- -->
+
+  <section class="footer" id="contact">
+    <h4 style="margin-top: 50px;">Contact Us</h4>
+    <p>Feel Free To Check Our Media</p>
+    <div class="icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+  </section>
+
+
+
+
+  <!-- ------ js show/hide menu ------- -->
+
+  <script>
+    var navlinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navlinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navlinks.style.right = "-200px"
+    }
+  </script>
+</body>
+
+</html>
